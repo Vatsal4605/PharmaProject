@@ -32,13 +32,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log('Response received:', response.status);
 
                 if (response.ok) {
-                    const successData = await response.json();
                     console.log('Success:', successData);
                     form.reset();
                     successMessage.style.display = 'block';
                     errorMessage.style.display = 'none';
                 } else {
-                    const errorData = await response.json();
                     console.error('Server error:', errorData);
                     errorMessage.style.display = 'block';
                     successMessage.style.display = 'none';

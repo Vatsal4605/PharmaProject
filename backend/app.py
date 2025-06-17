@@ -9,7 +9,7 @@ load_dotenv()
 
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "*"}})
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:%40Manya5204@localhost:5432/pharmaproject'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:0000@localhost/pharmaproject'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)

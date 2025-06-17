@@ -4,7 +4,7 @@ from models import Contact, db
 
 contact_api = Blueprint('contact_api', __name__)
 
-@contact_api.route('/api/contact', methods=['POST', 'OPTIONS'])
+@contact_api.route('/api/contact', methods=['GET', 'POST', 'OPTIONS'])
 @cross_origin()
 def contact():
     print("Received request:", request.method)
@@ -13,18 +13,17 @@ def contact():
         print("Handling OPTIONS request")
         return jsonify({}), 200
         
+    if request.method == 'GET':
+        return jsonify({'message': 'GET not supported on this endpoint. Please use POST.'}), 405
+        
     try:
         print("Getting JSON data from request")
         data = request.get_json()
         print("Received data:", data)
         
-        if not data:
-            print("Error: No JSON data received")
-            return jsonify({'error': 'No JSON data received'}), 400
-
         required_fields = ['name', 'email', 'phone', 'address', 'message']
-        if not all(field in data for field in required_fields):
-            missing_fields = [field for field in required_fields if field not in data]
+        if not data or not all(field in data for field in required_fields):
+            missing_fields = [field for field in required_fields if not data or field not in data]
             print(f"Error: Missing required fields: {missing_fields}")
             return jsonify({'error': f'Missing required fields: {missing_fields}'}), 400
 
@@ -50,3 +49,5 @@ def contact():
         import traceback
         print("Traceback:", traceback.format_exc())
         return jsonify({'error': error_msg}), 500
+    
+    return jsonify({'error': 'Method Not Allowed'}), 405
