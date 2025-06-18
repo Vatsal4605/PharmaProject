@@ -1825,7 +1825,7 @@ textarea.w-input, textarea.w-select {
 
 .w-nav-link {
   vertical-align: top;
-  color: #222;
+  color: #e0d9cf;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -1836,7 +1836,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .w-nav-link.w--current {
-  color: #0082f3;
+  color: #e0d9cf;
 }
 
 .w-nav-menu {
@@ -1859,6 +1859,7 @@ textarea.w-input, textarea.w-select {
 .w--nav-link-open {
   display: block;
   position: relative;
+  color: #e0d9cf;
 }
 
 .w-nav-overlay {
@@ -1898,8 +1899,8 @@ textarea.w-input, textarea.w-select {
 .w-nav-button {
   float: right;
   cursor: pointer;
-  -webkit-tap-highlight-color: #0000;
-  tap-highlight-color: #0000;
+  -webkit-tap-highlight-color: #e0d9cf;
+  tap-highlight-color: #e0d9cf;
   -webkit-user-select: none;
   user-select: none;
   padding: 18px;
@@ -3660,7 +3661,7 @@ blockquote {
 
 .text-size-small {
   font-family: var(--font--heading-font);
-  color:#e0d9cf;
+  color: var(--neutral--white-400);
   margin-bottom: 0;
   margin-left: 0;
   font-size: 1rem;
@@ -4397,8 +4398,8 @@ blockquote {
 
 .nav-brand-logo-wrapper {
   text-decoration: none;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
  
 }
 
@@ -4578,7 +4579,7 @@ blockquote {
 
 .nav-link {
   font-family: var(--font--heading-font);
-  color: var(--neutral--black-900);
+  color: #e0d9cf;
   padding: 0;
   font-size: 1rem;
   font-weight: 500;
@@ -4587,7 +4588,7 @@ blockquote {
 }
 
 .nav-link.w--current {
-  color: var(--brand--pink);
+  color: #e0d9cf;
 }
 
 .botton-text {
@@ -6270,7 +6271,7 @@ blockquote {
 }
 
 .footer-link {
-  color: #e0d9cf;
+  color: var(--neutral--black-900);
   font-size: 1rem;
   font-weight: 500;
   line-height: 1rem;
@@ -7507,6 +7508,7 @@ blockquote {
   .nav-link {
     margin-bottom: .5rem;
     padding: .5rem;
+    color: #e0d9cf;
   }
 
   .section-header {
