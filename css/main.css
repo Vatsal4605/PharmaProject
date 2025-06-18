@@ -3660,7 +3660,7 @@ blockquote {
 
 .text-size-small {
   font-family: var(--font--heading-font);
-  color: var(--neutral--white-400);
+  color:#e0d9cf;
   margin-bottom: 0;
   margin-left: 0;
   font-size: 1rem;
@@ -4397,8 +4397,8 @@ blockquote {
 
 .nav-brand-logo-wrapper {
   text-decoration: none;
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
  
 }
 
@@ -6270,7 +6270,7 @@ blockquote {
 }
 
 .footer-link {
-  color: var(--neutral--black-900);
+  color: #e0d9cf;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1rem;
