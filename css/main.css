@@ -6172,7 +6172,7 @@ blockquote {
 }
 
 .section-footer {
-  background-color: var(--neutral--white-300);
+  background-color:#445357;
   padding-top: 6.25rem;
   padding-bottom: 1.875rem;
 }
@@ -6217,7 +6217,7 @@ blockquote {
 }
 
 .footer-input::placeholder {
-  color: var(--neutral--gray-600);
+  color:#445357;
 }
 
 .success-message {
@@ -6340,7 +6340,7 @@ blockquote {
 }
 
 .footer-line {
-  background-color: var(--neutral--white-400);
+  background-color: #445357;
   width: 1px;
   height: 1rem;
 }
