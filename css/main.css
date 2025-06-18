@@ -1825,7 +1825,7 @@ textarea.w-input, textarea.w-select {
 
 .w-nav-link {
   vertical-align: top;
-  color: #222;
+  color: #fff;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -3549,7 +3549,7 @@ blockquote {
 
 .text-size-regular {
   font-family: var(--font--paragraph-font);
-  color: var(--neutral--black-700);
+  color: #e0d9cf;
   margin-bottom: 0;
   margin-left: 0;
   font-size: 1.125rem;
@@ -4397,9 +4397,8 @@ blockquote {
 
 .nav-brand-logo-wrapper {
   text-decoration: none;
-  width: 70px;
-  height: 70px;
- 
+  width: 120px;
+  height: 90px;
 }
 
 .nav-left-content-wrapper {
@@ -4578,7 +4577,7 @@ blockquote {
 
 .nav-link {
   font-family: var(--font--heading-font);
-  color: var(--neutral--black-900);
+  color: #e0d9cf;
   padding: 0;
   font-size: 1rem;
   font-weight: 500;
@@ -6192,7 +6191,9 @@ blockquote {
 .footer-top-content {
   max-width: 23.875rem;
 }
-
+.heading-style-h6{
+  color: #e0d9cf;
+}
 .footer-from-block {
   margin-bottom: 0;
 }
@@ -6270,7 +6271,7 @@ blockquote {
 }
 
 .footer-link {
-  color: var(--neutral--black-900);
+  color: #e0d9cf;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1rem;
