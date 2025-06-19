@@ -4576,14 +4576,11 @@ blockquote {
   display: flex;
 }
 
-.nav-link {
+.nav-link:hover {
   font-family: var(--font--heading-font);
   color: #e0d9cf;
-  padding: 0;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1rem;
-  text-decoration: none;
+  
+  text-decoration:underline;
 }
 
 .nav-link.w--current {

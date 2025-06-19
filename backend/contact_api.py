@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from flask_cors import cross_origin
-from models import Contact, db
+from models import Contact, NewsletterSubscriber, db
 
 contact_api = Blueprint('contact_api', __name__)
 
@@ -51,3 +51,24 @@ def contact():
         return jsonify({'error': error_msg}), 500
     
     return jsonify({'error': 'Method Not Allowed'}), 405
+
+@contact_api.route('/api/newsletter', methods=['POST', 'OPTIONS'])
+@cross_origin()
+def subscribe_newsletter():
+    if request.method == 'OPTIONS':
+        return jsonify({}), 200
+    try:
+        data = request.get_json()
+        email = data.get('email')
+        if not email:
+            return jsonify({'error': 'Email is required'}), 400
+        # Check if already subscribed
+        if NewsletterSubscriber.query.filter_by(email=email).first():
+            return jsonify({'message': 'Already subscribed!'}), 200
+        subscriber = NewsletterSubscriber(email=email)
+        db.session.add(subscriber)
+        db.session.commit()
+        return jsonify({'message': 'Subscribed successfully!'}), 201
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 500

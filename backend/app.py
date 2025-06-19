@@ -3,6 +3,7 @@ from flask_cors import CORS
 from dotenv import load_dotenv
 from models import db
 from contact_api import contact_api
+from newsletter_api import newsletter_api
 import os
 
 load_dotenv()
@@ -15,6 +16,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
 app.register_blueprint(contact_api)
+app.register_blueprint(newsletter_api)
 
 @app.route('/')
 def home():

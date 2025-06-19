@@ -19,3 +19,10 @@ class Contact(db.Model):
 
     def __repr__(self):
         return f'<Contact {self.name}>'
+
+class NewsletterSubscriber(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    email = db.Column(db.String(256), nullable=False, unique=True)
+
+    def __repr__(self):
+        return f'<NewsletterSubscriber {self.email}>'
