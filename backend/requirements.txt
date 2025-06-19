@@ -1,5 +1,5 @@
 Flask
 Flask_SQLAlchemy
 Flask-CORS
-pymysql
+psycopg2
 python-dotenv
