@@ -1,3 +1,12 @@
+:root {
+  --footer-bg: #eee;
+  --footer-text: #333;
+}
+
+footer {
+  background: var(--footer-bg);
+  color: #e0d9cf;
+}
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -2065,11 +2074,11 @@ textarea.w-input, textarea.w-select {
   --neutral--black-900: #262626;
   --neutral--white: white;
   --neutral--white-300: #ebebeb;
-  --secondary--blue: #0067ff;
+  --secondary--blue: #000;
   --neutral--black-700: #36373a;
   --neutral--gray-600: #6c6c6f;
   --neutral--white-400: #e0d9cf ;
-  --brand--pink: #445357;
+  --brand--pink: #929693;
   --transparent-color--transparent-color: transparent;
   --neutral--white-500\<deleted\|variable-f7c953b8-c434-7b7e-a9bc-356b4e1ac7f2\>: dimgrey;
 }
@@ -3336,15 +3345,15 @@ blockquote {
 }
 
 .heading-style-h5.text-color-blue {
-  color: var(--secondary--blue);
+  color: #445357;
 }
 
 .button {
   grid-column-gap: .625rem;
   grid-row-gap: .625rem;
-  background-color: var(--neutral--black-900);
+  background-color:#e0d9cf;
   font-family: var(--font--heading-font);
-  color: var(--neutral--white);
+  color: #445357;
   border-radius: 1.875rem;
   flex-flow: row-reverse;
   justify-content: center;
@@ -3370,7 +3379,7 @@ blockquote {
 }
 
 .button.is-secondary:hover {
-  color: var(--neutral--white);
+  color: #e0d9cf;
 }
 
 .button.is-checkout {
@@ -3550,7 +3559,7 @@ blockquote {
 
 .text-size-regular {
   font-family: var(--font--paragraph-font);
-  color: #e0d9cf;
+  color: #0a0601;
   margin-bottom: 0;
   margin-left: 0;
   font-size: 1.125rem;
@@ -3674,7 +3683,7 @@ blockquote {
 }
 
 .text-size-small.text-color-black-700 {
-  color: var(--neutral--black-700);
+  color:black;
 }
 
 .text-size-small.text-color-blue {
@@ -4398,8 +4407,8 @@ blockquote {
 
 .nav-brand-logo-wrapper {
   text-decoration: none;
-  width: 120px;
-  height: 90px;
+  width: 80px;
+  height: 60px;
 }
 
 .nav-left-content-wrapper {
@@ -4721,7 +4730,7 @@ blockquote {
 .tracker-component {
   grid-column-gap: 1.875rem;
   grid-row-gap: 1.875rem;
-  background-color: var(--secondary--blue);
+  background-color: #445357;
   border-radius: 1.875rem;
   flex-flow: row;
   justify-content: flex-start;
@@ -6193,7 +6202,7 @@ blockquote {
   max-width: 23.875rem;
 }
 .heading-style-h6{
-  color: #e0d9cf;
+  color: black;
 }
 .footer-from-block {
   margin-bottom: 0;
@@ -6303,7 +6312,8 @@ blockquote {
 }
 
 .footer-quick-contact-icon-wrapper {
-  background-color: var(--neutral--black-900);
+  background-color:#929693 ;
+  color: #445357 ;
   border-radius: 100%;
   justify-content: center;
   align-items: center;
