@@ -18,3 +18,12 @@ Your backend API will be running at http://127.0.0.1:5000/
 
  C:\Users\lenovo\AppData\Local\Programs\Python\Python312\python.exe app.py
  command to run at terminal
+
+
+ SELECT table_name
+FROM information_schema.tables
+WHERE table_schema = 'public';
+select * from contact;
+select * from newsletter_subscriber;
+
+queries for postgreSQL
