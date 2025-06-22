@@ -1,0 +1,13 @@
+/* Team Section Loading/Error States */
+.team-loading, .team-error {
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+    width: 100%;
+}
+
+.team-error {
+    color: #dc3545;
+    background: #f8d7da;
+    border-radius: 8px;
+} 
