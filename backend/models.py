@@ -67,3 +67,16 @@ class PricePackage(db.Model):
 
     def __repr__(self):
         return f'<PricePackage {self.name}>'
+
+class Research(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    heading = db.Column(db.String(200), nullable=False)
+    description = db.Column(db.Text, nullable=False)
+    category = db.Column(db.String(100), nullable=False)
+    date = db.Column(db.String(100), nullable=False)
+    image_link = db.Column(db.String(500), nullable=False)
+    external_link = db.Column(db.String(500), nullable=True)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+    def __repr__(self):
+        return f'<Research {self.heading}>'

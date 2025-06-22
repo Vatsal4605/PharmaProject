@@ -3,8 +3,10 @@ from models import Service
 
 def add_sample_services():
     with app.app_context():
-        # Clear existing services
-        Service.query.delete()
+        # Check if services already exist to avoid duplicates and data loss
+        if Service.query.first() is not None:
+            print("Services already exist. Skipping population.")
+            return
         
         # Sample services data with actual images from service_images folder
         sample_services = [
