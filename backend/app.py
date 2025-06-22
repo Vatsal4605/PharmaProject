@@ -7,6 +7,7 @@ from newsletter_api import newsletter_api
 from blog_api import blog_api
 from service_api import service_api
 from team_api import team_api
+from pricing_api import pricing_api
 import os
 
 load_dotenv()
@@ -23,6 +24,7 @@ app.register_blueprint(newsletter_api)
 app.register_blueprint(blog_api)
 app.register_blueprint(service_api)
 app.register_blueprint(team_api)
+app.register_blueprint(pricing_api)
 
 @app.route('/')
 def home():

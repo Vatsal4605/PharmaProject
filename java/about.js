@@ -35,17 +35,19 @@ document.addEventListener('DOMContentLoaded', function() {
         return `
             <div role="listitem" class="team-collection-item w-dyn-item">
                 <div class="team-card">
+                    <div class="team-card-details">
+                        <div class="team-card-content">
+                            <h5 class="heading-style-h5">${member.name}</h5>
+                            <div class="text-size-regular">${member.role}</div>
+                        </div>
+                        <div class="team-card-social-wrapper">
+                            ${member.facebook_link ? `<a href="${member.facebook_link}" target="_blank" class="team-social-link w-inline-block"><img src="icons/facebook.svg" loading="lazy" alt="Facebook Icon"/></a>` : ''}
+                            ${member.instagram_link ? `<a href="${member.instagram_link}" target="_blank" class="team-social-link w-inline-block"><img src="icons/instagram.svg" loading="lazy" alt="Instagram Icon"/></a>` : ''}
+                            ${member.twitter_link ? `<a href="${member.twitter_link}" target="_blank" class="team-social-link w-inline-block"><img src="icons/twitter.svg" loading="lazy" alt="Twitter Icon"/></a>` : ''}
+                        </div>
+                    </div>
                     <div class="team-card-image-wrapper">
                         <img src="${member.image_path}" loading="lazy" alt="${member.name}" class="team-card-image" />
-                    </div>
-                    <div class="team-card-content">
-                        <h5 class="heading-style-h5">${member.name}</h5>
-                        <div class="text-size-regular">${member.role}</div>
-                    </div>
-                    <div class="team-card-social-wrapper">
-                        ${member.facebook_link ? `<a href="${member.facebook_link}" target="_blank" class="team-social-link w-inline-block"><img src="https://cdn.prod.website-files.com/6759a39683657b8e1facb485/6759a39683657b8e1facc0d5_Facebook.svg" loading="lazy" alt="Facebook Icon"/></a>` : ''}
-                        ${member.instagram_link ? `<a href="${member.instagram_link}" target="_blank" class="team-social-link w-inline-block"><img src="https://cdn.prod.website-files.com/6759a39683657b8e1facb485/6759a39683657b8e1facc0d3_Instagram.svg" loading="lazy" alt="Instagram Icon"/></a>` : ''}
-                        ${member.twitter_link ? `<a href="${member.twitter_link}" target="_blank" class="team-social-link w-inline-block"><img src="https://cdn.prod.website-files.com/6759a39683657b8e1facb485/6759a39683657b8e1facc0d1_Twitter.svg" loading="lazy" alt="Twitter Icon"/></a>` : ''}
                     </div>
                 </div>
             </div>

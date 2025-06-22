@@ -56,3 +56,14 @@ class TeamMember(db.Model):
 
     def __repr__(self):
         return f'<TeamMember {self.name}>'
+
+class PricePackage(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
+    description = db.Column(db.Text, nullable=True)
+    price = db.Column(db.String(50), nullable=False)
+    benefits = db.Column(db.Text, nullable=False)  # Benefits stored as a delimited string
+    get_started_link = db.Column(db.String(500), nullable=False)
+
+    def __repr__(self):
+        return f'<PricePackage {self.name}>'
