@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function fetchTeamMembers() {
         showLoading();
-        fetch('http://localhost:5000/api/team')
+        fetch('http://127.0.0.1:5000/api/team') 
             .then(response => response.json())
             .then(data => {
                 if (data.success && data.team) {
