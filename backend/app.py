@@ -15,7 +15,7 @@ load_dotenv()
 
 app = Flask(__name__)
 from flask_cors import CORS
-CORS(app, origins=["http://127.0.0.1:5500"])
+CORS(app, resources={r"/api/*": {"origins": "http://127.0.0.1:5500"}})
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:0000@localhost/pharmadb'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 

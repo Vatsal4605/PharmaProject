@@ -1,5 +1,5 @@
 // Service API Configuration
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'http://127.0.0.1:5000/api';
 
 // Service Management Class
 class ServiceManager {
@@ -34,7 +34,9 @@ class ServiceManager {
         const container = document.querySelector('.service-collection-list');
         console.log('✅ renderServices called');
         console.log('🔍 this.services:', this.services);
-        
+        console.log("📦 Generated HTML:", this.services.map(service => this.createServiceCard(service)).join(''));
+
+
         if (!container) {
             console.error('Service container not found');
             return;
