@@ -1,0 +1,229 @@
+/* --- Pricing Section Responsive Fixes --- */
+.section-price {
+  margin-bottom: 8rem;
+}
+.section-price .heading-style-h2 {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1.2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  display: block;
+  width: 100%;
+  border: none;
+  position: relative;
+}
+.section-price .heading-style-h2::after {
+  content: '';
+  display: block;
+  margin: 1.2rem auto 0 auto;
+  width: 80%;
+  max-width: 420px;
+  height: 2px;
+  background: #ececec;
+  border-radius: 2px;
+}
+.section-price .price-component {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-price .price-card {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  background-color: #fff;
+  padding: 4rem 4rem;
+  border-radius: 28px;
+  box-shadow: 0 12px 48px rgba(0,0,0,0.13);
+  border: 1.5px solid #EAEAEA;
+  flex-wrap: wrap;
+  margin-top: 0;
+  width: 100%;
+  min-width: 320px;
+  margin-bottom: 3.5rem;
+}
+.section-price .price-card-left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 300px;
+  flex: 1 1 400px;
+}
+.section-price .price-card-right-content {
+  border-left: 1px solid #eaeaea;
+  padding-left: 3rem;
+  flex: 1 1 400px;
+}
+.section-price .price-text {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1a1a1a;
+  border-top: 1px solid #eaeaea;
+  padding-top: 2rem;
+  margin-top: auto;
+}
+.section-price .price-card-left-content .button {
+  margin-top: 2rem;
+  align-self: flex-start;
+  display: block;
+  font-size: 1.1rem;
+  padding: 0.9rem 2.2rem;
+}
+@media (max-width: 1200px) {
+  .section-price .price-component {
+    max-width: 98vw;
+  }
+  .section-price .price-card {
+    padding: 2.5rem 1.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .section-price .price-card {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .section-price .price-card-right-content {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #eaeaea;
+    padding-top: 2rem;
+  }
+  .section-price .heading-style-h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+.section-price .benefit-icon {
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+  background-color: #000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.section-price .price-benefit {
+  font-size: 1.08rem;
+  color: #3a2a5d;
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+.section-price .price-card-right-content ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+.section-price .price-card-right-content li {
+  margin-bottom: 0.7rem;
+}
+.section-price .price-card-badge {
+  position: absolute;
+  top: -1.2rem;
+  right: 2.5rem;
+  background: linear-gradient(90deg, #6c3ad7 60%, #a084e8 100%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 1.3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 8px rgba(80, 40, 180, 0.10);
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+@media (max-width: 1200px) {
+  .section-price .price-component {
+    max-width: 98vw;
+  }
+  .section-price .price-card {
+    padding: 2.5rem 1.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .section-price .price-card {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .section-price .price-card-right-content {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #eaeaea;
+    padding-top: 2rem;
+  }
+  .section-price .heading-style-h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .section-price .price-card-badge {
+    right: 1rem;
+    top: -1.2rem;
+    font-size: 0.95rem;
+    padding: 0.4rem 1rem;
+  }
+}
+
+/* --- Pricing Tab Menu Styles --- */
+.section-price .price-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.section-price .price-tab-menu {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f0f1f3;
+  border-radius: 99px;
+  padding: 0.35rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  gap: 0.5rem;
+  margin: 0 auto 0 auto;
+  height: auto;
+  min-width: 0;
+  text-align: center;
+}
+.section-price .price-tab::after {
+  content: '';
+  display: block;
+  margin: 0.8rem auto 0 auto;
+  width: 70%;
+  max-width: 340px;
+  height: 2px;
+  background: #ececec;
+  border-radius: 2px;
+}
+.section-price .price-tab-link {
+  padding: 0.6rem 1.5rem;
+  border-radius: 99px;
+  background-color: transparent;
+  color: #222;
+  font-weight: 500;
+  font-size: 1.08rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 0.1rem;
+  text-align: center;
+  height: auto;
+  min-width: 0;
+}
+.section-price .price-tab-link.w--current {
+  background-color: #fff;
+  color: #111;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-weight: 600;
+  z-index: 1;
+} 

@@ -15,7 +15,7 @@ def get_pricing_packages():
                 "name": pkg.name,
                 "description": pkg.description,
                 "price": pkg.price,
-                "benefits": pkg.benefits.split('|'),
+                "benefits": [b.strip() for b in pkg.benefits.split('|') if b.strip()],
                 "get_started_link": pkg.get_started_link
             }
             for pkg in packages
