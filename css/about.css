@@ -73,3 +73,8 @@
 .team-card:hover .team-card-image {
     transform: scale(1.05);
 } 
+.about-component {
+  min-height: 80vh;
+  margin-bottom: 100px;
+  padding-bottom: 40px;
+}
