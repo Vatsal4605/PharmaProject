@@ -14,7 +14,8 @@ import os
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "*"}})
+from flask_cors import CORS
+CORS(app, resources={r"/api/*": {"origins": ["http://127.0.0.1:5500"]}})
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:0000@localhost/pharmadb'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
@@ -35,4 +36,4 @@ def home():
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
-    app.run(debug=True)
+    app.run(host="127.0.0.1", port=5000, debug=True)

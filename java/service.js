@@ -32,6 +32,9 @@ class ServiceManager {
 
     renderServices() {
         const container = document.querySelector('.service-collection-list');
+        console.log('✅ renderServices called');
+        console.log('🔍 this.services:', this.services);
+        
         if (!container) {
             console.error('Service container not found');
             return;
