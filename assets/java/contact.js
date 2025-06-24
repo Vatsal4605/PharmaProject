@@ -32,19 +32,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log('Response received:', response.status);
 
                 if (response.ok) {
-                    console.log('Success:', successData);
                     form.reset();
-                    successMessage.style.display = 'block';
-                    errorMessage.style.display = 'none';
+                    if (successMessage) successMessage.style.display = 'block';
+                    if (errorMessage) errorMessage.style.display = 'none';
                 } else {
-                    console.error('Server error:', errorData);
-                    errorMessage.style.display = 'block';
-                    successMessage.style.display = 'none';
+                    if (errorMessage) errorMessage.style.display = 'block';
+                    if (successMessage) successMessage.style.display = 'none';
                 }
             } catch (error) {
                 console.error('Network error:', error);
-                errorMessage.style.display = 'block';
-                successMessage.style.display = 'none';
+                if (errorMessage) errorMessage.style.display = 'block';
+                if (successMessage) successMessage.style.display = 'none';
             }
         });
     } else {

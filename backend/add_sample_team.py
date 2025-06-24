@@ -15,7 +15,7 @@ def add_team_members():
             {
                 "name": "Dr. Evelyn Reed",
                 "role": "Chief Scientist",
-                "image_path": "team_images/member1.webp",
+                "image_path": "assets/team_images/member1.webp",
                 "instagram_link": "#",
                 "facebook_link": "#",
                 "twitter_link": "#"
@@ -23,7 +23,7 @@ def add_team_members():
             {
                 "name": "Dr. Marcus Chen",
                 "role": "Lead Researcher",
-                "image_path": "team_images/member2.webp",
+                "image_path": "assets/team_images/member2.webp",
                 "instagram_link": "#",
                 "facebook_link": "#",
                 "twitter_link": "#"
@@ -31,7 +31,7 @@ def add_team_members():
             {
                 "name": "Dr. Sofia Al-Jamil",
                 "role": "Pharmacology Expert",
-                "image_path": "team_images/member3.webp",
+                "image_path": "assets/team_images/member3.webp",
                 "instagram_link": "#",
                 "facebook_link": "#",
                 "twitter_link": "#"
@@ -39,7 +39,7 @@ def add_team_members():
             {
                 "name": "Dr. Ben Carter",
                 "role": "Lab Director",
-                "image_path": "team_images/member4.webp",
+                "image_path": "assets/team_images/member4.webp",
                 "instagram_link": "#",
                 "facebook_link": "#",
                 "twitter_link": "#"

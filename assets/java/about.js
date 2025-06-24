@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div class="text-size-regular">${member.role}</div>
                         </div>
                         <div class="team-card-social-wrapper">
-                            ${member.facebook_link ? `<a href="${member.facebook_link}" target="_blank" class="team-social-link w-inline-block"><img src="icons/facebook.svg" loading="lazy" alt="Facebook Icon"/></a>` : ''}
-                            ${member.instagram_link ? `<a href="${member.instagram_link}" target="_blank" class="team-social-link w-inline-block"><img src="icons/instagram.svg" loading="lazy" alt="Instagram Icon"/></a>` : ''}
-                            ${member.twitter_link ? `<a href="${member.twitter_link}" target="_blank" class="team-social-link w-inline-block"><img src="icons/twitter.svg" loading="lazy" alt="Twitter Icon"/></a>` : ''}
+                            ${member.facebook_link ? `<a href="${member.facebook_link}" target="_blank" class="team-social-link w-inline-block"><img src="assets/icons/facebook.svg" loading="lazy" alt="Facebook Icon"/></a>` : ''}
+                            ${member.instagram_link ? `<a href="${member.instagram_link}" target="_blank" class="team-social-link w-inline-block"><img src="assets/icons/instagram.svg" loading="lazy" alt="Instagram Icon"/></a>` : ''}
+                            ${member.twitter_link ? `<a href="${member.twitter_link}" target="_blank" class="team-social-link w-inline-block"><img src="assets/icons/twitter.svg" loading="lazy" alt="Twitter Icon"/></a>` : ''}
                         </div>
                     </div>
                     <div class="team-card-image-wrapper">

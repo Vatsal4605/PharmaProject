@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createPackageHTML(pkg) {
         const benefitsHTML = (pkg.benefits || []).map(benefit => `
             <div class="benefit-item">
-                <img src="icons/tick.svg" loading="lazy" alt="Tick" class="benefit-icon"/>
+                <img src="assets/icons/tick.svg" loading="lazy" alt="Tick" class="benefit-icon"/>
                 <div class="text-size-regular">${benefit}</div>
             </div>
         `).join('');

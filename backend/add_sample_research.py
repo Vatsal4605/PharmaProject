@@ -16,7 +16,7 @@ def add_sample_research():
                 'description': 'Egestas lacinia malesuada tortor habitant quam eu pretium tempus. Elementum nisi sed vulputate sed.',
                 'category': 'Biotechnology',
                 'date': 'January 2024',
-                'image_link': 'research_image/research1.webp',
+                'image_link': 'assets/research_image/research1.webp',
                 'external_link': 'https://example.com/gene-editing-research'
             },
             {
@@ -24,7 +24,7 @@ def add_sample_research():
                 'description': 'Odio blandit adipiscing natoque volutpat venenatis. Nec ultrices felis augue feugiat vitae.',
                 'category': 'Genetics',
                 'date': 'August 2024',
-                'image_link': 'research_image/research2.webp',
+                'image_link': 'assets/research_image/research2.webp',
                 'external_link': 'https://example.com/gene-expression-research'
             },
             {
@@ -32,7 +32,7 @@ def add_sample_research():
                 'description': 'Quis lectus vestibulum mauris gravida sollicitudin feugiat ultricies. Enim donec ultrices aliquet duis interdum iaculis dignissim.',
                 'category': 'Pharmacology',
                 'date': 'September 2024',
-                'image_link': 'research_image/research3.webp',
+                'image_link': 'assets/research_image/research3.webp',
                 'external_link': 'https://example.com/clinical-trials-research'
             },
             {
@@ -40,7 +40,7 @@ def add_sample_research():
                 'description': 'Viverra morbi magna ante in vitae aliquet eu. Nullam in massa et diam tristique et potenti.',
                 'category': 'Environmental',
                 'date': 'November 2024',
-                'image_link': 'research_image/research4.webp',
+                'image_link': 'assets/research_image/research4.webp',
                 'external_link': 'https://example.com/pollution-control-research'
             }
         ]

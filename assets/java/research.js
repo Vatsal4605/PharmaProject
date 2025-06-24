@@ -93,7 +93,7 @@ function createResearchCard(research) {
 // Function to handle image loading errors
 function handleImageError(img) {
     // Fallback to a default image if the specified image fails to load
-    img.src = 'research_image/research1.webp';
+    img.src = 'assets/research_image/research1.webp';
     img.alt = 'Research Image';
 }
 

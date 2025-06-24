@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     const blogImages = [
-        'blog_images/blog1.jpeg',
-        'blog_images/blog2.jpeg',
-        'blog_images/blog3.jpeg',
-        'blog_images/blog4.jpeg',
-        'blog_images/blog5.jpeg',
-        'blog_images/blog6.jpeg',
-        'blog_images/blog7.jpeg',
-        'blog_images/blog8.jpeg',
-        'blog_images/blog9.jpeg',
-        'blog_images/blog10.jpeg'
+        'assets/blog_images/blog1.jpeg',
+        'assets/blog_images/blog2.jpeg',
+        'assets/blog_images/blog3.jpeg',
+        'assets/blog_images/blog4.jpeg',
+        'assets/blog_images/blog5.jpeg',
+        'assets/blog_images/blog6.jpeg',
+        'assets/blog_images/blog7.jpeg',
+        'assets/blog_images/blog8.jpeg',
+        'assets/blog_images/blog9.jpeg',
+        'assets/blog_images/blog10.jpeg'
     ];
 
     function getRandomImage() {
