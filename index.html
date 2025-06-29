@@ -44,6 +44,26 @@
             };
         </script>
         <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.490/build/spline-viewer.js"></script>
+        <style>
+        /* Local override: Ensure Get Started button is always visible */
+        .section-price .price-card-left-content {
+          display: flex;
+          flex-direction: column;
+          min-height: 340px;
+        }
+        .section-price .price-card-left-content .button {
+          margin-top: 2rem;
+          align-self: flex-start;
+          display: block;
+          font-size: 1.1rem;
+          padding: 0.9rem 2.2rem;
+        }
+        @media (min-width: 900px) {
+          .section-price .price-card-left-content {
+            justify-content: flex-end;
+          }
+        }
+        </style>
     </head>
     <body>
         <div class="page-wrapper">

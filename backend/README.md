@@ -3,7 +3,7 @@
 1. Install Python 3.8+ and PostgreSQL on your system.
 2. Create a PostgreSQL database named `pharmadb` and a user with access.
 3. Update the `backend/.env` file with your PostgreSQL credentials:
-   DATABASE_URL=postgresql://<user>:<password>@localhost/pharmadb
+   DATABASE_URL=postgresql://<user>:<password>@localhost/medorica_pharma
 4. Open a terminal in the `backend` directory and run:
    pip install -r requirements.txt
 5. Initialize the database tables:

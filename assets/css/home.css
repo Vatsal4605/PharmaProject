@@ -1,6 +1,7 @@
 /* --- Pricing Section Responsive Fixes --- */
 .section-price {
   margin-bottom: 8rem;
+  padding-bottom: 4rem;
 }
 .section-price .heading-style-h2 {
   text-align: center;
@@ -27,6 +28,7 @@
 .section-price .price-component {
   max-width: 1200px;
   margin: 0 auto;
+  overflow: visible;
 }
 .section-price .price-card {
   display: flex;
@@ -42,6 +44,8 @@
   width: 100%;
   min-width: 320px;
   margin-bottom: 3.5rem;
+  overflow: visible;
+  align-items: stretch;
 }
 .section-price .price-card-left-content {
   display: flex;
@@ -49,11 +53,24 @@
   justify-content: flex-start;
   min-width: 300px;
   flex: 1 1 400px;
+  min-height: 340px;
+  height: 100%;
+}
+.section-price .price-card-left-content .button {
+  margin-top: 2rem;
+  align-self: flex-start;
+  display: block;
+  font-size: 1.1rem;
+  padding: 0.9rem 2.2rem;
+  flex-shrink: 0;
 }
 .section-price .price-card-right-content {
   border-left: 1px solid #eaeaea;
   padding-left: 3rem;
   flex: 1 1 400px;
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
 }
 .section-price .price-text {
   font-size: 2.5rem;
@@ -62,14 +79,6 @@
   color: #1a1a1a;
   border-top: 1px solid #eaeaea;
   padding-top: 2rem;
-  margin-top: auto;
-}
-.section-price .price-card-left-content .button {
-  margin-top: 2rem;
-  align-self: flex-start;
-  display: block;
-  font-size: 1.1rem;
-  padding: 0.9rem 2.2rem;
 }
 @media (max-width: 1200px) {
   .section-price .price-component {

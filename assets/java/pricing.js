@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="padding-bottom padding-medium"></div>
                     <div class="price-text">${pkg.price}</div>
                     <div class="padding-bottom padding-large"></div>
-                    <a href="${pkg.get_started_link}" class="button w-inline-block">
+                    <a href="contact.html" class="button w-inline-block">
                         <div class="botton-text">Get Started now</div>
                     </a>
                 </div>
